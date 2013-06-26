@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#output{
+	width:100px;
+	height:25px;
+	background-color:#ccc;
+	border:1px solid #666;
+}
+
+#controls{
+	width:500px;
+	height:30px;
+	background-color:#000;
+}
+
+button{
+	width:100px;
+}

@@ -1,0 +1,58 @@
+<html>
+
+    <head>
+    
+    <script type="text/javascript">
+	
+		var i, timer, divide;
+		i = 0;
+		divide = 10;
+		
+		function start(){
+			timer = self.setInterval("increment()",(1000/divide))
+		}
+		function increment(){
+			i++;
+			document.getElementById("timer_out").innerHTML = (i / divide)
+		}
+		function stop(){
+		clearInterval(timer);
+		timer = null;	
+		}
+		function reset(){
+		stop();
+		i = 0;	
+		document.getElementById("timer_out").innerHTML = (i/divide);
+		}
+			
+	</script>
+        
+    <body>
+        
+        <span id="timer_out">
+        0.00
+        </span>
+    
+        <button id="start_timer" onclick="start()">
+        Start
+        </button>
+
+        <button id="stop_timer" onclick="stop()">
+        Stop
+        </button>
+        
+        <button id="reset_timer" onclick="reset()">
+        Reset
+        </button>
+
+    </body>
+    
+    </head>
+
+</html>
+
+
+<br>
+<br>
+<br>
+<a href="index copy.html">click</a>
